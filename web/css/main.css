@@ -1,0 +1,358 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 15, 2022, 8:59:32 AM
+    Author     : Dung
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    align-items: stretch;
+    background: white;
+    min-height: 70vh;
+}
+
+.center-pane{
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh;
+}
+
+#main { 
+    background: #eee;
+}
+
+#header {
+    height: 60px;
+    background: #160146;
+    color: #de22ad;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#logo{
+    width: 60px;
+    padding: 0 !important;
+    align-self: center;
+}
+
+#header-title{
+    font-size: 20px;
+    text-transform: capitalize;
+    align-self: center;
+}
+
+#header-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#header-search{
+    align-self: center;
+    margin: 0 10px 0 10px;
+}
+
+#header-login{
+    align-self: center;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:15px;
+}
+
+#header-login:hover{    
+    color: #ed6dcc !important;
+    background: #2c097a !important;
+}
+
+#cart{
+    align-self: center;
+    margin: 0 10px 0 10px;
+    font-size: 27px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:10px;
+}
+
+#cart:hover{    
+    color: #ed6dcc !important;
+    background: #2c097a !important;
+}
+
+#search-box{
+    border-radius: 10px;
+    color: #de22ad;
+    background: #ccc;
+    height: 20px;
+    padding: 2px;
+    border: solid 2px #de22ad;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#footer {
+    height: 160px;
+    clear: left;
+    background: #160146;
+    display: flex;
+    flex-direction: row;
+    color: #de22ad;
+    font-size: 12px;
+}
+
+.footer-column{
+    margin: 10px;    
+    padding: 10px;
+}
+
+.footer-separator{
+    height: 1px;
+    background-color:  #de22ad;
+    border: none;
+}
+
+#leftMenu {    
+    width: 200px;
+    float: left;
+    background: #ccc;
+}
+
+#content {    
+    width: 700px;
+    float: left;
+    background: #eee;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #e7e6e6;
+}
+
+.details-card{                
+    margin: 10px;
+    padding: 5px;                
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: row;
+}   
+
+.details-text{
+    font-size: 17px;
+    color: #ed6dcc;
+}
+
+.details-header{
+    color: #321573;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.details-title{
+    color: #de22ad ;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.details-image{
+    width: 200px;
+    height: 300px; 
+}
+
+.details-info{
+    padding: 5px;    
+}
+
+.primary-button{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ed6dcc;
+    border-radius: 10px;
+    border: solid 1px #ed6dcc;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+}
+
+.primary-button:hover{
+    background: #de22ad;
+    border-color: #de22ad;
+}
+
+.scd-button{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #a9a6a6;
+    border-radius: 10px;
+    border: solid 1px #a9a6a6;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+}
+
+.scd-button:hover{
+    background: #979393;
+    border-color: #979393;
+}
+
+.action-panel{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.l-mn-item{
+    border: solid 1px #ed6dcc;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;  
+    color: white;
+    background: #ed6dcc;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+}
+
+.l-mn-item:hover{
+    background: #de22ad;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #e7e6e6;
+}
+
+.product-card{                
+    margin: 5px;
+    padding: 5px;
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    border: 4px solid #de22ad;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+}
+
+.product-card:hover{ 
+    background: white;
+    border: 4px solid #ed6dcc;                
+}
+
+.desc-text{
+    font-size: 12px;
+    color: #de22ad;
+}
+
+.product-image{
+    width: 110px;
+    height: 140px;
+}
+            
+.input-box{
+    border-radius: 10px;
+    color: #de22ad;
+    background: #ccc;
+    height: 25px;
+    padding: 2px;
+    border: solid 2px #de22ad;
+    margin: auto;
+    display: block;
+}
+            
+.m-t-10{
+    margin-top:10px
+}
+
+.m-10-a{
+    margin: 10px auto;
+}
+
+.m-10-a-db{
+    margin: 0px auto;
+    display: block;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.error-msg{
+    color: red;
+}
+
+.mn-list{
+    display: flex;
+    flex-direction: column;
+}
+.mn-list-item{
+    padding: 5px;
+    margin-top:10px;                
+    border-bottom: solid 1px #2c097a;
+    display: flex;
+    flex-direction: row;
+}
+
+.mn-list-item:hover{
+    background:#c2b4e3;
+}
+
+.mn-list-cell{
+    height: 30px;
+    width: 75px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.mn-list-cell i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mn-list-cell i:hover{
+    color: #de22ad;             
+}
+
+.mn-header{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mn-title{
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    background: white;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+}
